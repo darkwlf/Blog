@@ -1,0 +1,418 @@
+<!--  <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="#">Logo</a>
+
+<ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Dropdown link
+            </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+    </li>
+</ul>
+</nav>
+<div id="benjamin" class="ben" align="center">
+    <div>
+        <br><br>
+        <h1 style="color:rgb(0, 0, 0);font-family:sans-serif;margin-top:30px;color:rgb(0, 255, 157);font-family:font" class="about">درباره من</h1>
+
+        <a name="about"></a>
+        <p style="font-family: font;color:white;">من بنیامین رحمتی هستم.حدود سه چهار سالی میشه دارم در زمینه برنامه نویسی کار میکنم. به لینوکس علاقه زیادی دارم و دوره الپیک ۱ رو با موفقیت تموم کردم. مهارت هام در پایین ذکر شده نمونه کار ها هم ذکر شده. به زبان های برنامه نویسی سطح بالا و اسکریپت
+            .نویسی تحت ترمینال علاقه دارم. لینک اکانت هامم برای ارتباط اون پایین گذاشتم
+        </p>
+        <progress value="1" max="100" id="p-bar" role="button" onclick="load()">1%</progress>
+        <script>
+            function load() {
+                var a = document.getElementById("p-bar");
+                var b = 100;
+                var n = 2;
+                while (b > n) {
+                    a.value += 1;
+                    n += 1;
+                }
+            }
+        </script>
+    </div>
+    <br>
+    <hr width="300">
+    <a name="skill"></a>
+    <p style="font-size: 40px;color:white;">
+        مهارت ها
+
+    </p>
+    <div id="skills" class="col-xs-12 col-ms-9 col-md-6 col-lg-3">
+
+    </div>
+    <hr width="500" color="black">
+    <h1 style="color:white;font-family:font;">آخرین پست ها</h1>
+    <i role="button" class="fa fa-arrow-left" style="margin-right:250px;font-size:70px;" onclick="post()"></i>
+    <i role="button" class="fa fa-arrow-right" style="margin-left:250px;font-size:70px;" onclick="posts()"></i>
+    <div id="posts" class="posts" style="border-radius: 8px;display:none;">
+        <div id="images" style="border-radius: 8px;">
+            <img src="/static/login.jpg" height="200" style="border-top-right-radius: 8px;border-top-left-radius:8px;width:361px;" alt="بنیامین رحمتی">
+        </div>
+        <div id="texts">
+            <div id="titles" style="border:2px solid white;border-width:3px;width:355px;margin-right:1px;background:white;border-bottom-right-radius: 1px;border-bottom-left-radius:1px;">
+                <p style="font-size: 30px;margin-top:10px"> دومین پست وبلاگ</p>
+            </div>
+            <div id="pe" style="border:2px solid white; width:357px;background:black;border-bottom-right-radius: 8px;border-bottom-left-radius:8px;">
+                <p style="color:white">
+
+                    خب حالا که من اینو با فلسک زدم و میخوام اپن سورسش کنم بریم سورس صفحه لاگین رو تشریح کنیم و کلا درباره فلسک توضیح بدیم
+                    <a href="/posts">....ادامه مطلب</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </center>
+    <div id="post" class="post" style="border-radius: 8px;">
+        <div id="image" style="border-radius: 8px;">
+            <img src="/static/index.png" height="200" style="border-top-right-radius: 8px;border-top-left-radius:8px;width:362px;" alt="بنیامین رحمتی">
+        </div>
+        <div id="text">
+            <div id="title" style="border:2px solid white;border-width:3px;width:355px;margin-right:1px;background:white;border-bottom-right-radius: 1px;border-bottom-left-radius:1px;">
+                <p style="font-size: 30px;margin-top:10px"> اولین پست وبلاگ</p>
+            </div>
+            <div id="p" style="border:2px solid white; width:357px;background:black;border-bottom-right-radius: 8px;border-bottom-left-radius:8px;">
+                <p style="color:white">
+
+                    خب من این وبلاگ خوشگل و ساده رو با یه اهدافی درست کردم .
+                    <br> اولا بگم که اپن سورس میکنمش دوما
+                    <br> که باید طرحی که میزنید ساده باشه این خیلی مهمه
+                    <a href="/posts/#continue">....ادامه مطلب</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function post() {
+        var a = document.getElementById("posts");
+        var b = document.getElementById("post");
+        b.style = "display:none";
+        a.style = "display:block";
+
+    }
+
+    function posts() {
+        var a = document.getElementById("posts");
+        var b = document.getElementById("post");
+        b.style = "display:block";
+        a.style = "display:none";
+    }
+
+    function slide() {
+        var a = document.getElementById("first");
+        a.src = "/static/index.png";
+    }
+
+    function slider() {
+        var a = document.getElementById("first");
+        a.src = "/static/login.jpg";
+    }
+</script>
+<br><br><br><br><br><br>
+<hr color="black" width="500">
+<a name="contact-us"></a>
+<h1 style="color:black !important;">تماس با ما در شبکه های اجتماعی </h1>
+<br><br>
+<div style="margin-right:-30px;margin-bottom:100px">
+    <a href="https://telegram.me/linuxlover_programmer"><i class="fa fa-telegram" style="color:rgb(18, 140, 211);font-size:40px;margin-right:38px;"></i></a>
+    <a href="https://github.com/darkwlf"><i class="fa fa-github" style="color:black;font-size:40px;margin-right:38px;"></i></a>
+    <a href="https://codepen.io/darkwlf"><i class="fa fa-codepen" style="font-size:40px;margin-right:38px;"></i></a>
+    <a href="mailto://drk.wlf9@gmail.com"><i class="fa fa-google" style="color:red;font-size:40px;margin-right:38px;"></i></a>
+    <a href="https://stackoverflow.com/users/13424008/benjamin"><i class="fa fa-stack-overflow" style="color:rgb(218, 153, 32);font-size:40px;margin-right:38px;"></i></a>
+    <a href="https://instagram.com/darkwlf669"><i class="fa fa-instagram" style="color:tomato;font-size:40px;margin-right:38px;"></i></a>
+</div>
+
+</div>-->
+<html>
+
+<head>
+    <meta name="description" content=" انجام پروژه های وب و پایتون">
+    <meta name="keywords" content="بنیامین قابل رحمت, انجام پروژه, بنیامین رحمتی">
+    <meta name="author" content="بنیامین رحمتی">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/index.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="/static/css/style.css">-->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>خانه</title>
+
+
+    <style>
+        @font-face {
+            font-family: yekan;
+            src: url("/static/z.ttf");
+        }
+        
+        a,
+        b,
+        p,
+        h1,
+        h2,
+        h3 {
+            font-family: yekan !important;
+            font-size: 28px;
+        }
+        
+        @font-face {
+            font-family: awesome;
+            src: url("/static/g.ttf")
+        }
+        
+        @font-face {
+            font-family: fa;
+            src: url("/static/fa-regular-400.ttf")
+        }
+        
+        @font-face {
+            font-family: b;
+            src: url("/static/b.ttf")
+        }
+        
+        *:fullscreen *:-ms-fullscreen,
+        *:-webkit-full-screen,
+        *:-moz-full-screen {
+            overflow: auto !important;
+        }
+        
+        #god {
+            font-family: yekan !important;
+        }
+        
+        #skills {
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            justify-content: center;
+            justify-self: center;
+            justify-items: center;
+            border: 2px solid rgb(68, 65, 65);
+            border-radius: 8px;
+            background-color: rgb(68, 65, 65);
+        }
+        
+        #skills span {
+            color: black;
+            font-size: 20px;
+        }
+        
+        #thumb {
+            box-shadow: 20px 18px 21px rgb(43, 42, 42) !important;
+        }
+        
+        #thumb:hover {
+            box-shadow: 4px 4px 4px rgb(43, 42, 42);
+            transition-duration: 2s !important;
+        }
+        
+        #skills p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(/static/bg.jpg) !important;" id="body">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="direction: rtl !important;">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="/">خانه</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/#sample"> نمونه کار ها <span class="sr-only">(current)</span></a></li>
+                        <li><a href="/#about">درباره من</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">منابع آموزشی <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://w3schools.com/html" style="font-size: 15px;">HTML</a></li>
+
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://w3schools.com/php" style="font-size: 15px;">PHP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.youtube.com/watch?v=oVYskVQ5KdQ&list=PLdUn5H7OTUk1WYCrDJpNGpJ2GFWd7yZaw&index=1" style="font-size: 15px;">FLASK</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <a name="search" href="/search"><i role="button" type="submit" class="btn btn-success glyphicon glyphicon-search navbar-left" style="font-family: awesome !important;margin-top:8px;"></i></a>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/login">ورود</a></li>
+                        <li><a href="/sign">ثبت نام</a></li>
+                        <script>
+                            var elem = document.getElementById("body");
+
+                            function openfull() {
+                                // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                                if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+                                    if (elem.requestFullScreen) {
+                                        elem.requestFullScreen();
+                                    } else if (elem.mozRequestFullScreen) {
+                                        elem.mozRequestFullScreen();
+                                    } else if (elem.webkitRequestFullScreen) {
+                                        elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                                    } else if (elem.msRequestFullscreen) {
+                                        elem.msRequestFullscreen();
+                                    }
+                                } else {
+                                    if (document.cancelFullScreen) {
+                                        document.cancelFullScreen();
+                                    } else if (document.mozCancelFullScreen) {
+                                        document.mozCancelFullScreen();
+                                    } else if (document.webkitCancelFullScreen) {
+                                        document.webkitCancelFullScreen();
+                                    } else if (document.msExitFullscreen) {
+                                        document.msExitFullscreen();
+                                    }
+                                }
+                            }
+                        </script>
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <h1 id="god" style="text-align: center;color:white;margin-top:60px;">بسم الله الرحمن الرحیم</h1>
+        <div id="about" style="margin-top: 60px;">
+            <h1 style="margin-top:30px;color:rgb(0, 255, 157);font-family:yekan;text-align:center;font-size:60px;" class="about">درباره من </h1>
+            <br>
+            <a name="about"></a>
+            <p style="font-family: yekan;color:white;direction:rtl;font-size:x-large">من بنیامین رحمتی هستم.حدود سه چهار سالی میشه دارم در زمینه برنامه نویسی کار میکنم. به لینوکس علاقه زیادی دارم و دوره الپیک ۱ رو با موفقیت تموم کردم. مهارت هام در پایین ذکر شده نمونه کار ها هم ذکر شده. به زبان های برنامه نویسی سطح بالا و اسکریپت
+                .نویسی تحت ترمینال علاقه دارم. لینک اکانت هامم برای ارتباط اون پایین گذاشتم. توسعه دهنده بک اند و فرانت اند وب هستم همچنین توسعه دهنده پایتون هم هستم. دوره الپیک یک هم گذروندم و یه جورایی لینوکس هم بلدم و بهش علاقه دارم. حدود دو سه سال
+                هم هست دارم کار میکنم تو همه زمینه هایی که گفتم. دیگه چیز خاصی نمیمونه و حتما در وبلاگ ثبت نام کنید و از پست های من دیدن کنید.
+            </p>
+        </div>
+
+        <br>
+        <hr>
+        <h1 style="text-align: center;color:rgb(0, 255, 157);font-size:60px;font-family:yekan;margin-top:30px;">مهارت ها</h1>
+        <br>
+        <div id="skills" class="row">
+            <center>
+                <p>HTML</p>
+                <br>
+                <p>CSS</p>
+                <br>
+                <p>JAVA SCRIPT</p>
+                <br>
+                <p>BOOTSTRAP</p>
+                <br>
+                <p>w3.css</p>
+                <br>
+                <p>angular</p>
+                <br>
+                <p>PHP</p>
+                <br>
+                <p>PYTHON</p>
+                <br>
+                <p>FLASK</p>
+                <br>
+                <p>PYQT</p>
+                <br>
+                <p>LINUX</p>
+                <br>
+                <p>SEO</p>
+            </center>
+        </div>
+        <hr width="200">
+        <a name="posts"></a>
+        <h1 style="color:rgb(0, 255, 157);font-family:yekan;text-align:center;font-size:60px;">پست ها</h1>
+        <br>
+        <div class="row" id="post">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xs-offset-12 col-lg-pull-9 col-md-pull-12 col-sm-pull-12 col-xs-pull-12">
+                <div class="thumbnail" id="thumb">
+                    <img src="/static/index.png" alt="بنیامین رحمتی" class="img-responsive">
+                    <div class="caption" style="direction: rtl !important;">
+                        <h3>اولین پست وبلاگ</h3>
+                        <p>خب سلام خدمت دوستان عزیز.توی این پست قراره درباره هدف تشکیل این وبلاگ و جزییات و تکنولوژی های بکار رفته درش صحبت بشه.از این شروع کنم که...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">ادامه مطلب</a> </p>
+                        <span class="badge">معرفی</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-0 col-sm-offset-0 col-xs-offset-0 col-xs-pull-0">
+            <div class="thumbnail" id="thumb" style="direction:rtl;">
+                <img src="/static/index.png" alt="بنیامین رحمتی" class="img-responsive">
+                <div class="caption" style="direction: rtl !important;">
+                    <h3>دومین پست وبلاگ</h3>
+                    <p>خب سلام خدمت دوستان عزیز.توی این پست قراره درباره هدف تشکیل این وبلاگ و جزییات و تکنولوژی های بکار رفته درش صحبت بشه.از این شروع کنم که...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">ادامه مطلب</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr width="500">
+    <a name="contact" href="/contact">
+        <h1 style="align-items: center;text-align:center;font-family: yekan;color:rgb(0, 18, 182);font-size:60px;"><strong>تماس با ما</strong></h1>
+    </a>
+    <!--
+    <center>
+        <h1 style="font-family:yekan;color:white;"> تماس با ما</h1>
+        <a name="social" href="https://telegram.me/linuxlover_programmer" class="col-xs-offset-2"><i class="fa fa-telegram" style="color: rgb(4, 153, 199);font-size:50px;"></i></a>
+        <a name="social" href="https://instagram.com/darkwlf669"><i class="fa fa-instagram" style="color: rgb(145, 9, 9);font-size:50px;"></i></a>
+        <a name="social" href="https://stackoverflow.com/users/13424008/benjamin" class="col-xs-offset-0"><i class="fa fa-stack-overflow" style="color: rgb(201, 144, 39);font-size:50px;"></i></a>
+        <a name="social" href="https://github.com/darkwlf" class="col-xs-offset-2"><i class="fa fa-github" style="color: rgb(0, 0, 0);font-size:50px;"></i></a>
+        <a name="social" href="mailto://drk.wlf9@gmail.com" class="col-xs-offset-2"><i class="fa fa-google" style="color: rgb(209, 10, 10);font-size:50px;margin-left:-140px;"></i></a>
+        <a name="social" href="https://codepen.io/darkwlf" class="col-xs-offset-3"><i class="fa fa-codepen" style="color: rgb(224, 193, 14);font-size:50px;"></i></a>
+    </center>-->
+    <br>
+    <hr width="500">
+    <a name="sample"></a>
+    <h1 style="align-items: center;text-align:center;font-family: yekan;color:rgb(0, 255, 157);font-size:60px;">نمونه کار ها</h1>
+    <center>
+        <br>
+        <a href="https://github.com/s0perus3r/terminal" style="text-align: center;justify-content:center;align-items: center;color:rgb(0, 18, 182);margin-bottom:-40px;"><strong>اسکریپت ترمینال ساده با پایتون</strong></a>
+        <br>
+        <a href="https://github.com/s0perus3r/corona-gui" style="text-align: center;justify-content:center;align-items: center;color:rgb(0, 18, 182);margin-bottom:-40px;"><strong>برنامه گرافیکی مشاهده آمار کرونا به زبان پایتون</strong></a>
+        <br>
+        <a href="http://moeinzade.pythonanywhere.com" style="text-align: center;justify-content:center;align-items: center;color:rgb(0, 18, 182);margin-bottom:-40px;"><strong>وبلاگ رزومه</strong></a>
+        <br>
+        <a href="https://codepen.io/darkwlf/pen/PoPVGjP" style="text-align: center;justify-content:center;align-items: center;color:rgb(0, 18, 182);margin-bottom:-40px;"><strong> صفحه لاگین زیبا</strong></a>
+        <br>
+
+        <!--https://codepen.io/darkwlf/pen/PoPVGjP-->
+    </center>
+    <br><br><br><br>
+
+    <br><br><br><br><br>
+    <nav class="navbar-wrapper navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+            <p class="navbar-text pull-left">&copy; تمامی حقوق برای بنیامین رحمتی محفوظ میباشد.طراح سایت بنیامین رحمتی</p>
+
+        </div>
+    </nav>
+    </div>
+</body>
+
+</html>
