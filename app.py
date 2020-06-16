@@ -9,7 +9,7 @@ import sqlite3
 #from flask import Session
 from flask import Flask, g, request, render_template, request, redirect, make_response, session, url_for, flash
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\xec]/'
+app.secret_key = b'TOKEN SECRET KEY'
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 def create_db():
